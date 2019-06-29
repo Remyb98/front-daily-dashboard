@@ -1,0 +1,10 @@
+{
+  "name": "Daily Dashboard",
+  "short_name": "Daily Dashboard",
+  "description": "Application for start you day with love",
+  "theme_color": "#3f51b5",
+  "orientation": "portrait",
+  "start_url": "/",
+  "display": "standalone",
+  "lang": "en"
+}
