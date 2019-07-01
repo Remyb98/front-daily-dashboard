@@ -8,12 +8,17 @@ import {MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatTabs
 import { LayoutModule } from '@angular/cdk/layout';
 import { DashboardViewComponent } from './dashboard/dashboard-view/dashboard-view.component';
 import { AboutComponent } from './about/about.component';
+import { NewsViewComponent } from './dashboard/news-view/news-view.component';
+import { CalendarViewComponent } from './dashboard/calendar-view/calendar-view.component';
+import {FullCalendarModule} from '@fullcalendar/angular';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardViewComponent,
-    AboutComponent
+    AboutComponent,
+    NewsViewComponent,
+    CalendarViewComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +30,8 @@ import { AboutComponent } from './about/about.component';
     MatButtonModule,
     MatIconModule,
     MatListModule,
-    MatTabsModule
+    MatTabsModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,19 @@
+<br>
+<full-calendar
+  #calendar
+  defaultView="timeGridWeek"
+  [plugins]="calendarPlugins"
+  [header]="{
+    left: '',
+    center: 'title'
+  }"
+  [buttonText]="{
+    today: 'Aujourd\'hui'
+
+  }"
+  locale="fr"
+  weekNumberCalculation="ISO"
+  nowIndicator="true"
+  (eventClick)="infoEvent($event.event)"
+  [events]="events"
+></full-calendar>

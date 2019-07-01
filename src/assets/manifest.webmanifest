@@ -6,5 +6,12 @@
   "orientation": "portrait",
   "start_url": "/",
   "display": "standalone",
-  "lang": "en"
+  "lang": "en",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ]
 }
