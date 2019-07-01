@@ -14,3 +14,13 @@ router-outlet ~ * {
   width: 100%;
   height: 100%;
 }
+
+.fc-button {
+  background-color: #3f51b5;
+  border-color: #3f51b5;
+}
+
+.fc-button:hover {
+  background-color: #ff4081;
+  border-color: #ff4081;
+}

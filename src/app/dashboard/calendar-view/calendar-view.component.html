@@ -4,8 +4,9 @@
   defaultView="timeGridWeek"
   [plugins]="calendarPlugins"
   [header]="{
-    left: '',
-    center: 'title'
+    left: 'today',
+    center: 'title',
+    right: 'prev,next'
   }"
   [buttonText]="{
     today: 'Aujourd\'hui'
@@ -16,4 +17,8 @@
   nowIndicator="true"
   (eventClick)="infoEvent($event.event)"
   [events]="events"
+  [titleFormat]="{ year: 'numeric', month: 'long' }  "
+  [height]="calendarHeight"
+  minTime="07:00:00"
+  maxTime="20:00:00"
 ></full-calendar>

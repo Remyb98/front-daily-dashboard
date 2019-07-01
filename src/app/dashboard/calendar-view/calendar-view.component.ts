@@ -13,6 +13,8 @@ export class CalendarViewComponent implements OnInit {
 
   calendarPlugins = [timeGridPlugin];
 
+  calendarHeight;
+
   events: Array<any> = [
     { title: 'event 1', date: '2019-06-28' },
     { title: 'event 2', date: '2019-06-29 12:00:00', description: 'lorem ipsum' },
@@ -27,6 +29,7 @@ export class CalendarViewComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.calendarHeight = "auto";
   }
 
 }
