@@ -13,9 +13,10 @@
 
   }"
   locale="fr"
+  allDayText="Journée"
   weekNumberCalculation="ISO"
   nowIndicator="true"
-  (eventClick)="infoEvent($event.event)"
+  (eventClick)="onClickEvent($event.event)"
   [events]="events"
   [titleFormat]="{ year: 'numeric', month: 'long' }  "
   [height]="calendarHeight"
