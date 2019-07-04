@@ -2,5 +2,18 @@
     {{ event.title }}  
 </h1>
 <div mat-dialog-content>
-  Here soon all event info! <br>
+  <p>
+    <mat-icon aria-hidden="true">date_range</mat-icon>
+    {{ event.start | date: 'EEEEEE dd LLL' | titlecase }} : 
+    {{ event.start | date: 'HH:mm' }} - {{ event.end | date: 'HH:mm' }}
+  </p>
+
+  <p *ngIf="event.extendedProps.location">
+    <mat-icon aria-hidden="true">place</mat-icon>
+    {{ event.extendedProps.location }}
+  </p>
+  <p *ngIf="event.extendedProps.description">
+    <mat-icon aria-hidden="true">subject</mat-icon>
+    {{ event.extendedProps.description }}
+    </p>
 </div>
