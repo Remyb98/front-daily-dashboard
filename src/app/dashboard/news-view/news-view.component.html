@@ -1,20 +1,91 @@
 <mat-tab-group>
   <mat-tab label="Business">
-    <h1>Business</h1>
+    <mat-list>
+      <h2>Business</h2>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let new of news.business">
+        <img matListAvatar src="{{ new.urlToImage }}" alt="Image article">
+        <h3 matLine>{{ new.title }}</h3>
+        <p matLine>
+          <span>{{ new.description }}</span>
+        </p>
+        <a href="{{ new.url }}" target="_blank">
+          <mat-icon color="accent" mat-icon-button style="size: 1px;">open_in_browser</mat-icon>
+        </a>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
   </mat-tab>
   <mat-tab label="Entertainment">
-    <h1>Entertainment</h1>
+    <mat-list>
+      <h2>Entertainment</h2>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let new of news.entertainment">
+        <img matListAvatar src="{{ new.urlToImage }}" alt="Image article">
+        <h3 matLine>{{ new.title }}</h3>
+        <p matLine>
+          <span>{{ new.description }}</span>
+        </p>
+        <a href="{{ new.url }}" target="_blank">
+          <mat-icon color="accent" mat-icon-button style="size: 1px;">open_in_browser</mat-icon>
+        </a>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
   </mat-tab>
   <mat-tab label="Health">
-    <h1>Health</h1>
+    <mat-list>
+      <h2>Health</h2>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let new of news.health">
+        <img matListAvatar src="{{ new.urlToImage }}" alt="Image article">
+        <h3 matLine>{{ new.title }}</h3>
+        <p matLine>
+          <span>{{ new.description }}</span>
+        </p>
+        <a href="{{ new.url }}" target="_blank">
+          <mat-icon color="accent" mat-icon-button style="size: 1px;">open_in_browser</mat-icon>
+        </a>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
   </mat-tab>
   <mat-tab label="Science">
-    <h1>Science</h1>
+    <mat-list>
+      <h2>Science</h2>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let new of news.science">
+        <img matListAvatar src="{{ new.urlToImage }}" alt="Image article">
+        <h3 matLine>{{ new.title }}</h3>
+        <p matLine>
+          <span>{{ new.description }}</span>
+        </p>
+        <a href="{{ new.url }}" target="_blank">
+          <mat-icon color="accent" mat-icon-button style="size: 1px;">open_in_browser</mat-icon>
+        </a>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
   </mat-tab>
   <mat-tab label="Sports">
-    <h1>Sports</h1>
+    <h2>Sports</h2>
+    My bad deleted all data in the mock :)
   </mat-tab>
   <mat-tab label="Technology">
-    <h1>Technology</h1>
+    <mat-list>
+      <h2>Technology</h2>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let new of news.technology">
+        <img matListAvatar src="{{ new.urlToImage }}" alt="Image article">
+        <h3 matLine>{{ new.title }}</h3>
+        <p matLine>
+          <span>{{ new.description }}</span>
+        </p>
+        <a href="{{ new.url }}" target="_blank">
+          <mat-icon color="accent" mat-icon-button style="size: 1px;">open_in_browser</mat-icon>
+        </a>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
   </mat-tab>
 </mat-tab-group>

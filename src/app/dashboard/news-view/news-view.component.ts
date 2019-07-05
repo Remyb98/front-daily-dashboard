@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import mockNews from './mockNews';
 
 @Component({
   selector: 'app-news-view',
@@ -9,7 +10,10 @@ export class NewsViewComponent implements OnInit {
 
   constructor() { }
 
+  news = mockNews;
+
   ngOnInit() {
+    console.log(this.news);
   }
 
 }
