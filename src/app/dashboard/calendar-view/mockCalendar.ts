@@ -1,0 +1,77 @@
+const mockAgenda = [
+  {
+    title: 'Now event',
+    start: new Date(),
+    description: 'The duration should be bugged stupid Date object',
+    organizer: 'System'
+  },
+  {
+    title: 'One day event',
+    start: '2019-07-09T00:00:00+02:00',
+    end: '2019-07-10T00:00:00+02:00',
+    duration: null, dtstamp: '2019-07-02T10:38:29+02:00',
+    uid: '6on0ljr1upig8n8bm2dajnhjgb@google.com',
+    created: '2019-06-11T23:36:01+02:00',
+    lastmodified: null,
+    description: null,
+    location: null,
+    sequence: null,
+    status: 'CONFIRMED',
+    transp: 'TRANSPARENT',
+    organizer: null,
+    attendee: null
+  },
+  {
+    title: 'Two days event',
+    start: '2019-07-10T00:00:00+02:00',
+    end: '2019-07-12T00:00:00+02:00',
+    duration: null,
+    dtstamp: '2019-07-02T10:38:29+02:00',
+    uid: '6on0ljr1upig8n8bm2dajnhjgb@google.com',
+    created: '2019-06-11T23:36:01+02:00',
+    lastmodified: null,
+    description: null,
+    location: null,
+    sequence: null,
+    status: 'CONFIRMED',
+    transp: 'TRANSPARENT',
+    organizer: null,
+    attendee: null
+  },
+  {
+    title: 'Colored event',
+    start: '2019-07-10T14:00:00+02:00',
+    end: '2019-07-10T17:00:00+02:00',
+    color: '#00FF00',
+    duration: null,
+    dtstamp: '2019-07-02T10:38:29+02:00',
+    uid: '0aj78t47t3a24sbbcc7end705f@google.com',
+    created: '2019-06-11T22:18:17+02:00',
+    lastmodified: null,
+    description: 'C\'est la description de l\'event',
+    location: 'Maison',
+    sequence: null,
+    status: 'CONFIRMED',
+    transp: 'OPAQUE',
+    organizer: 'Rémy',
+    attendee: null
+  },
+  {
+    title: 'Simple event',
+    start: '2019-07-09T14:00:00+02:00',
+    end: '2019-07-09T15:00:00+02:00',
+    duration: null,
+    dtstamp: '2019-07-02T10:38:29+02:00',
+    uid: '0aj78t47t3a24sbbcc7end705f@google.com',
+    created: '2019-06-11T22:18:17+02:00',
+    lastmodified: null,
+    description: 'C\'est la description de l\'event',
+    location: 'Maison',
+    sequence: null,
+    status: 'CONFIRMED',
+    transp: 'OPAQUE',
+    organizer: null,
+    attendee: null
+  }
+];
+export default mockAgenda;

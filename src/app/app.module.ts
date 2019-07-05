@@ -15,7 +15,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { EventViewComponent } from './dashboard/event-view/event-view.component';
 
 import { registerLocaleData } from '@angular/common';
-import localeFr from '@angular/common/locales/fr'
+import localeFr from '@angular/common/locales/fr';
 registerLocaleData(localeFr);
 
 @NgModule({

@@ -12,8 +12,6 @@ export class NewsViewComponent implements OnInit {
 
   news = mockNews;
 
-  ngOnInit() {
-    console.log(this.news);
-  }
+  ngOnInit() { }
 
 }
