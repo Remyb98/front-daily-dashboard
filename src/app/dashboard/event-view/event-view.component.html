@@ -2,10 +2,27 @@
     {{ event.title }}  
 </h1>
 <div mat-dialog-content>
-  <p>
+  <p *ngIf="event.allDay; else duration">
     <mat-icon aria-hidden="true">date_range</mat-icon>
-    {{ event.start | date: 'EEEEEE dd LLL' | titlecase }} : 
-    {{ event.start | date: 'HH:mm' }} - {{ event.end | date: 'HH:mm' }}
+    <span *ngIf="event.allDay > 1; else singleDay">
+      Du {{ event.start | date: 'EEEE' }} au {{ event.end | date: 'EEEE' }}
+    </span>
+    <ng-template #singleDay>
+      Le {{ event.start| date: 'EEEE dd' }}
+    </ng-template>
+  </p>
+
+  <ng-template #duration>
+    <p>
+      <mat-icon aria-hidden="true">date_range</mat-icon>
+      {{ event.start | date: 'EEEEEE dd LLL' | titlecase }} : 
+      {{ event.start | date: 'HH:mm' }} - {{ event.end | date: 'HH:mm' }}
+    </p>
+  </ng-template>
+
+  <p *ngIf="event.extendedProps.organizer">
+    <mat-icon aria-hidden="true">person</mat-icon>
+    {{ event.extendedProps.organizer }}
   </p>
 
   <p *ngIf="event.extendedProps.location">
