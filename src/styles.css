@@ -24,3 +24,8 @@ router-outlet ~ * {
   background-color: #ff4081;
   border-color: #ff4081;
 }
+
+.fc-button:hover:disabled {
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+}
