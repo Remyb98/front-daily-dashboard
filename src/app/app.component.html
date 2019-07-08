@@ -11,19 +11,19 @@
     <mat-sidenav #nav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
       <mat-nav-list>
         <a mat-list-item routerLink="" (click)="nav.close()">
-          Home <span class="sidenav-spacer"></span> <mat-icon>home</mat-icon>
+          Accueil <span class="sidenav-spacer"></span> <mat-icon>home</mat-icon>
         </a>
         <a mat-list-item>
-          Account <span class="sidenav-spacer"></span> <mat-icon>account_circle</mat-icon>
+          Compte <span class="sidenav-spacer"></span> <mat-icon>account_circle</mat-icon>
         </a>
         <a mat-list-item>
-          Edit preferences <span class="sidenav-spacer"></span> <mat-icon>edit</mat-icon>
+          Modifier les préférences <span class="sidenav-spacer"></span> <mat-icon>edit</mat-icon>
         </a>
         <a mat-list-item routerLink="about" (click)="nav.close()">
-          About <span class="sidenav-spacer"></span> <mat-icon>info</mat-icon>
+          À propos <span class="sidenav-spacer"></span> <mat-icon>info</mat-icon>
         </a>
         <a mat-list-item>
-          Logout <span class="sidenav-spacer"></span> <mat-icon>logout</mat-icon>
+          Déconnexion <span class="sidenav-spacer"></span> <mat-icon>logout</mat-icon>
         </a>
       </mat-nav-list>
     </mat-sidenav>

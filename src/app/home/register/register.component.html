@@ -7,22 +7,22 @@
   <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
     <mat-card-content class="form-container">
       <mat-form-field>
-        <input matInput formControlName="email" placeholder="Enter you email" type="email">
+        <input matInput formControlName="email" placeholder="Entrez votre adresse mail" type="email">
         <mat-error>
-          Please enter a valid email address !
+          Entrez une adresse mail valide !
         </mat-error>
       </mat-form-field>
       <mat-form-field>
-        <input matInput formControlName="password" placeholder="Enter your password" type="password">
-        <mat-hint>At least 6 characters</mat-hint>
+        <input matInput formControlName="password" placeholder="Entrez votre mot de passe" type="password">
+        <mat-hint>Au moins 6 caractères</mat-hint>
         <mat-error>
-          Password not correct !
+          Le mot de passe ne remplit pas les conditions
         </mat-error>
       </mat-form-field>
       <mat-form-field>
-        <input matInput formControlName="confirmPassword" placeholder="Confirm your password" type="password">
+        <input matInput formControlName="confirmPassword" placeholder="Confirmer votre mot de passe" type="password">
         <mat-error>
-          Passwords doesn't match !
+          Les mots de passe ne sont pas identiques
         </mat-error>
       </mat-form-field>
     </mat-card-content>
