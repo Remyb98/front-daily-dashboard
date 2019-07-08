@@ -68,8 +68,21 @@
     </mat-list>
   </mat-tab>
   <mat-tab label="Sports">
-    <h2>Sports</h2>
-    My bad deleted all data in the mock :)
+    <mat-list>
+      <h2>Sports</h2>
+      <mat-divider></mat-divider>
+      <mat-list-item *ngFor="let new of news.technology">
+        <img matListAvatar src="{{ new.urlToImage }}" alt="Image article">
+        <h3 matLine>{{ new.title }}</h3>
+        <p matLine>
+          <span>{{ new.description }}</span>
+        </p>
+        <a href="{{ new.url }}" target="_blank">
+          <mat-icon color="accent">open_in_browser</mat-icon>
+        </a>
+        <mat-divider></mat-divider>
+      </mat-list-item>
+    </mat-list>
   </mat-tab>
   <mat-tab label="Technologie">
     <mat-list>
