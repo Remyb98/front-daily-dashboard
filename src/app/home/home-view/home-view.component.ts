@@ -8,21 +8,21 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class HomeViewComponent implements OnInit {
 
-  hide: boolean = true;
+  hide = true;
 
   loginForm = this.fb.group({
     email: ['', [Validators.email]],
     password: ['', Validators.required]
   });
 
-  
+
   public get email() {
     return this.loginForm.get('email');
   }
 
   public get password() {
     return this.loginForm.get('password');
-  }  
+  }
 
   onSubmit() {
     console.log('submited');
