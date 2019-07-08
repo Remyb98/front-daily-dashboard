@@ -2,10 +2,10 @@
 <mat-card>
   <mat-card-header>
     <mat-card-title>Connexion</mat-card-title>
-    <mat-card-subtitle><a href="">Pas encore de compte ?</a></mat-card-subtitle>
+    <mat-card-subtitle><a routerLink="register">Pas encore de compte ?</a></mat-card-subtitle>
   </mat-card-header>
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <mat-card-content class="login-container">
+    <mat-card-content class="form-container">
       <mat-form-field>
         <input formControlName="email" matInput placeholder="Enter you email" type="email">
         <mat-error>

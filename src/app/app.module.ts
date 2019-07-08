@@ -18,9 +18,11 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { HomeViewComponent } from './home/home-view/home-view.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './home/register/register.component';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
+
 registerLocaleData(localeFr);
 
 @NgModule({
@@ -31,7 +33,8 @@ registerLocaleData(localeFr);
     NewsViewComponent,
     CalendarViewComponent,
     EventViewComponent,
-    HomeViewComponent
+    HomeViewComponent,
+    RegisterComponent
   ],
   entryComponents: [
     EventViewComponent

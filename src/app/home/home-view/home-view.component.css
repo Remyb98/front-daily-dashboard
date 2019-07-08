@@ -1,9 +1,9 @@
-.login-container {
+.form-container {
   display: flex;
   flex-direction: column;
 }
 
-.login-container > * {
+.form-container > * {
   width: 100%;
 }
 
