@@ -16,10 +16,11 @@ import { EventViewComponent } from './dashboard/event-view/event-view.component'
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { HomeViewComponent } from './home/home-view/home-view.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
-import { HomeViewComponent } from './home/home-view/home-view.component';
 registerLocaleData(localeFr);
 
 @NgModule({
@@ -50,7 +51,8 @@ registerLocaleData(localeFr);
     MatDialogModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    ReactiveFormsModule
   ],
   providers: [
     {

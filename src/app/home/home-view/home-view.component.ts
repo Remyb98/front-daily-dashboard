@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home-view',
@@ -9,7 +10,25 @@ export class HomeViewComponent implements OnInit {
 
   hide: boolean = true;
 
-  constructor() { }
+  loginForm = this.fb.group({
+    email: ['', [Validators.email]],
+    password: ['', Validators.required]
+  });
+
+  
+  public get email() {
+    return this.loginForm.get('email');
+  }
+
+  public get password() {
+    return this.loginForm.get('password');
+  }  
+
+  onSubmit() {
+    console.log('submited');
+  }
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
   }
