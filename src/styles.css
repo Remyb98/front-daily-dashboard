@@ -29,3 +29,7 @@ router-outlet ~ * {
   background-color: #2C3E50;
   border-color: #2C3E50;
 }
+
+.text-center {
+  text-align: center;
+}

@@ -13,9 +13,13 @@ import { CalendarViewComponent } from './dashboard/calendar-view/calendar-view.c
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { MatDialogModule } from '@angular/material/dialog';
 import { EventViewComponent } from './dashboard/event-view/event-view.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
+import { HomeViewComponent } from './home/home-view/home-view.component';
 registerLocaleData(localeFr);
 
 @NgModule({
@@ -25,7 +29,8 @@ registerLocaleData(localeFr);
     AboutComponent,
     NewsViewComponent,
     CalendarViewComponent,
-    EventViewComponent
+    EventViewComponent,
+    HomeViewComponent
   ],
   entryComponents: [
     EventViewComponent
@@ -42,7 +47,10 @@ registerLocaleData(localeFr);
     MatListModule,
     MatTabsModule,
     FullCalendarModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [
     {
