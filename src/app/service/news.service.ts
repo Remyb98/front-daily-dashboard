@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
+import URL from './config';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NewsService {
-
-  readonly URL: string = 'https://api.dashboard.remybarberet.fr/';
 
   newsSubject = new Subject<any[]>();
 
@@ -16,7 +15,7 @@ export class NewsService {
   error = false;
 
   getNews() {
-    this.httpClient.get<any[]>(this.URL + 'news')
+    this.httpClient.get<any[]>(URL + 'news')
       .subscribe(
         response => {
           this.news = response;
