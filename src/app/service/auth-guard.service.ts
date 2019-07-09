@@ -7,8 +7,7 @@ import { AuthService } from './auth.service';
 })
 export class AuthGuardService implements CanActivate {
 
-  canActivate(): boolean {
-    console.log('checkin');
+  public canActivate(): boolean {
     if (!this.authService.isAuthenticated()) {
       this.router.navigate(['']);
       return false;

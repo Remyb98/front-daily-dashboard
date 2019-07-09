@@ -63,9 +63,13 @@ registerLocaleData(localeFr);
     MatProgressSpinnerModule,
     JwtModule.forRoot({
       config: {
+        tokenGetter: () => localStorage.getItem('token'),
         headerName: 'Authorization',
         authScheme: 'Bearer ',
-        skipWhenExpired: true
+        skipWhenExpired: false,
+        whitelistedDomains: [
+          'api.dashboard.remybarberet.fr'
+        ]
       }
     })
   ],
