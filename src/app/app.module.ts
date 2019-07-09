@@ -63,7 +63,9 @@ registerLocaleData(localeFr);
     MatProgressSpinnerModule,
     JwtModule.forRoot({
       config: {
-        tokenGetter: () => localStorage.getItem('token'),
+        tokenGetter: (): string|null => {
+          return localStorage.getItem('token');
+         },
         headerName: 'Authorization',
         authScheme: 'Bearer ',
         skipWhenExpired: false,
