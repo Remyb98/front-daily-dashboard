@@ -28,6 +28,10 @@ import localeFr from '@angular/common/locales/fr';
 
 registerLocaleData(localeFr);
 
+export function tokenGetter() {
+  return localStorage.getItem('token');
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,9 +67,7 @@ registerLocaleData(localeFr);
     MatProgressSpinnerModule,
     JwtModule.forRoot({
       config: {
-        tokenGetter: (): string|null => {
-          return localStorage.getItem('token');
-         },
+        tokenGetter: tokenGetter,
         headerName: 'Authorization',
         authScheme: 'Bearer ',
         skipWhenExpired: false,
