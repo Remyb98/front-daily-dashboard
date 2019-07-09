@@ -21,6 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './home/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { JwtModule } from '@auth0/angular-jwt';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
@@ -59,7 +60,14 @@ registerLocaleData(localeFr);
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    JwtModule.forRoot({
+      config: {
+        headerName: 'Authorization',
+        authScheme: 'Bearer ',
+        skipWhenExpired: true
+      }
+    })
   ],
   providers: [
     {

@@ -4,6 +4,7 @@ import { DashboardViewComponent } from './dashboard/dashboard-view/dashboard-vie
 import { AboutComponent } from './about/about.component';
 import { HomeViewComponent } from './home/home-view/home-view.component';
 import { RegisterComponent } from './home/register/register.component';
+import { AuthGuardService as AuthGuard } from './service/auth-guard.service';
 
 const routes: Routes = [
   { path: '', component: HomeViewComponent },
