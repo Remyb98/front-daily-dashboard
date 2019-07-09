@@ -20,7 +20,6 @@ export class NewsViewComponent implements OnInit {
     this.newsSubscription = this.newsService.newsSubject.subscribe(
       (news: any[]) => this.news = news
     );
-    this.newsService.emitNews();
     this.newsService.getNews();
   }
 

@@ -20,6 +20,7 @@ import { HomeViewComponent } from './home/home-view/home-view.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './home/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
@@ -57,7 +58,8 @@ registerLocaleData(localeFr);
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatProgressSpinnerModule
   ],
   providers: [
     {
