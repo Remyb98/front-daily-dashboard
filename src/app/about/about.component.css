@@ -1,0 +1,12 @@
+.card {
+    margin-top: 3%;
+}
+
+.card-header-image {
+  background-image: url('../../assets/logo.png');
+  background-size: cover;
+}
+
+li {
+    margin-bottom: 12px;
+}

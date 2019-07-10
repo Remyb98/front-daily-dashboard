@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { fadeAnimation } from '../animation';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-about',
@@ -9,7 +10,13 @@ import { fadeAnimation } from '../animation';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  offerCookie() {
+    this.snackBar.open('Merci pour le cookie !', 'Fermer', {
+      duration: 3000
+    });
+  }
+
+  constructor(private snackBar: MatSnackBar) { }
 
   ngOnInit() {
   }

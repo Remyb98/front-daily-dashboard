@@ -22,6 +22,7 @@ import { RegisterComponent } from './home/register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { JwtModule } from '@auth0/angular-jwt';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
@@ -64,6 +65,7 @@ export function tokenGetter() {
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    MatSnackBarModule,
     MatProgressSpinnerModule,
     JwtModule.forRoot({
       config: {

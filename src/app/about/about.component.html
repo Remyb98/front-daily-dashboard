@@ -1,3 +1,47 @@
-<p>
-  about works!
-</p>
+<mat-card class="card">
+  <mat-card-header>
+    <div mat-card-avatar class="card-header-image"></div>
+    <mat-card-title>À propos</mat-card-title>
+    <mat-card-subtitle>Tout savoir sur Daily Dashboard !</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      Daily Dashboard est un SaaS gratuit vous permettant de regrouper les différents services 
+      que vous consulter tous les jours comme vos agendas, la météos, les informations en un seul 
+      endroit.
+    </p>
+    <p>
+      L'application a été conçu avec les technos suivantes :
+    </p>
+    <ul>
+      <li>
+        <a href="https://github.com/Remy93130/api-daily-dashboard" target="_blank">
+          API en PHP avec Symfony
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Remy93130/front-daily-dashboard" target="_blank">
+          Client en Javascript avec Angular
+        </a>
+      </li>
+      <li>
+        <a href="https://www.digital.sncf.com/startup/api" target="_blank">
+          API SNCF pour les horaires de trains.
+        </a>
+      </li>
+      <li>
+        <a href="https://openweathermap.org/" target="_blank">
+          API OpenWeatherMap pour la météo.
+        </a>
+      </li>
+      <li>
+        <a href="https://newsapi.org" target="_blank">
+          NewsApi.org pour les informations.
+        </a>
+      </li>
+    </ul>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="offerCookie()">Offrir un cookie</button>
+  </mat-card-actions>
+</mat-card>
