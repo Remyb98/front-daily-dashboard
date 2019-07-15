@@ -26,6 +26,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/fr';
+import { SpinnerComponent } from './spinner/spinner.component';
 
 registerLocaleData(localeFr);
 
@@ -42,7 +43,8 @@ export function tokenGetter() {
     CalendarViewComponent,
     EventViewComponent,
     HomeViewComponent,
-    RegisterComponent
+    RegisterComponent,
+    SpinnerComponent
   ],
   entryComponents: [
     EventViewComponent
