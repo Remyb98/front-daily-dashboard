@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
-import URL from './config';
+import config from './config';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +15,7 @@ export class NewsService {
   error = false;
 
   getNews() {
-    this.httpClient.get<any[]>(URL + 'news')
+    this.httpClient.get<any[]>(config.url + 'news')
       .subscribe(
         response => {
           this.news = response;

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { HttpClient } from '@angular/common/http';
-import URL from './config';
+import config from './config';
 
 @Injectable({
   providedIn: 'root'
@@ -21,7 +21,7 @@ export class AuthService {
   }
 
   public login(email: string, password: string): void {
-    this.httpClient.post<any[]>(URL + 'users', {email, password})
+    this.httpClient.post<any[]>(config.url + 'users', {email, password})
       .subscribe(
         (response: any) => {
           if (response !== null) {
@@ -37,6 +37,6 @@ export class AuthService {
    * Complete this function when the user interface will be complete
    */
   private setUserSession(): void {
-    localStorage.setItem('', '');
+    localStorage.setItem(config.keyToken, '');
   }
 }
